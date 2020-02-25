@@ -8,6 +8,17 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__top {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+.progress {
+  height: 20px;
 }
 
 .coin {

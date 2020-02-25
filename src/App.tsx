@@ -40,6 +40,17 @@ function App() {
   return (
     <div className="app">
       <h1>Portfolio constructor</h1>
+      <div className="app__top">
+        {state.values.map(obj => (
+          <div
+            key={obj.name}
+            style={{
+              backgroundColor: obj.color,
+              width: (obj.value ? (obj.value * state.total) / 100 : 0) + '%',
+            }}
+            className="progress"></div>
+        ))}
+      </div>
       {state.values.map(obj => (
         <Coin
           key={obj.name}

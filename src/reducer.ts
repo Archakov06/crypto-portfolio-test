@@ -64,7 +64,6 @@ export default (state: IState, action: Action) => {
           if (obj.name === action.payload.name) {
             obj.value = action.payload.value;
           }
-
           return obj;
         }),
       };
