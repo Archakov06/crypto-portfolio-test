@@ -3,6 +3,7 @@ import React from 'react';
 import reducer, { initState, Types } from './reducer';
 import Coin from './components/Coin';
 import Bottom from './components/Bottom';
+import { testGit } from './components/test';
 
 function App() {
   const [state, dispatch] = React.useReducer(reducer, initState);
@@ -64,6 +65,8 @@ function App() {
       ))}
       <Bottom dispatch={dispatch} addedCoins={state.values} />
     </div>
+
+    <testGit />
   );
 }
 
